@@ -1,0 +1,330 @@
+/**
+{
+  margin: 0;
+}*/
+h1
+{
+  font-size: 80px;
+  font-family: 'Kenia, cursive';
+  flex: 1px;
+  
+}
+p.slogan
+{
+  font-size: 35px;
+}
+body
+{
+  background-color: #1695da;
+  margin: 0 auto;
+ 
+}
+
+.TitleContainer
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+/*Text du titre*/
+.titleBox {
+  background-color: white ;
+  position: absolute;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  margin-top: 100px;
+ 
+  padding: 30px;
+  width: auto;
+  box-shadow: -12px 12px 2px 1px rgba(10, 10, 252, 0.2);
+  
+}
+.TitleContainer
+{
+  width: 1500px;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+/* slider */
+.slides{
+  display: flex;
+  flex-direction: row;
+  animation: glisse 20s infinite ease;
+  width: calc(500px*4);
+  height: 167px;
+  opacity: 0.5;
+  z-index: -100;
+  /*margin-bottom: 20px;*/
+  
+}
+/*Animation slider*/
+@keyframes glisse{
+  0%{
+    transform: translateX(0);
+  }
+  33%{
+    transform: translateX(-1000px);
+  }
+  66%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+
+}
+
+
+
+/*navigation menu */
+nav.menu ul{
+ 
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-size: cover;
+}
+
+nav.menu ul li{
+  list-style: none;
+  text-decoration: none;
+
+  display: flex;
+  margin-top: 500px;
+  font-size: 50px;
+  color: antiquewhite;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+nav.menu a{
+  text-decoration: none;
+  color: antiquewhite;
+  flex: 1;
+}
+
+.nav-item{
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  flex: 180;
+  height: 150;
+  align-items: center;
+  margin-left: 0px;
+ 
+}
+.nav-item:hover
+{
+  transform: scale(1.2);
+  transition: 0.3s all;
+
+}
+
+
+
+
+
+
+
+
+.Boissons
+{
+  background: url(../Images/images/images/boisson-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+/*Sections plats*/
+section img{
+  width: 300px;
+  
+}
+
+.item-infos
+{
+ 
+flex-direction: row;
+align-items: right;
+justify-content: right;
+
+}
+
+/*Pizza*/
+.item-p
+{
+  font-size:24px ;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  display: flex;
+  width: 800px;
+  
+  
+}
+.item-p:hover
+{
+ 
+  transform: scale(1.1);
+  transition: 0.3s all;
+
+}
+
+section.Pizza
+{
+  padding: 50px;
+  margin-top: 20px;
+}
+.Pizza
+{
+  background: url(../Images/images/images/pizza-banner.jpg) 100%;
+  background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+
+
+/*        Burger          */
+.item-b
+{
+  font-size:24px ;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  display: flex;
+  width: 800px;
+}
+.item-b:hover
+{
+ 
+  transform: scale(1.1);
+  transition: 0.3s all;
+
+}
+
+
+section.Burger
+{
+  padding: 50px;
+  margin-top: 20px;
+}
+
+
+.Burger
+{
+
+  background: url(../Images/images/images/burger-banner.jpg) 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+
+
+/*        Salade        */
+
+section.Salade
+{
+  padding: 50px;
+  margin-top: 20px;
+  
+}
+
+.item-s
+{
+  font-size:24px ;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  display: flex;
+  width: 800px;
+  flex-direction: row-reverse;
+  margin-left: 1000px;
+  
+}
+.item-s:hover
+{
+ 
+  transform: scale(1.1);
+  transition: 0.3s all;
+
+}
+
+.Salade
+{
+  background: url(../Images/images/images/salad-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*        Boissons        */
+
+section.Boissons
+{
+  padding: 60px;
+  margin-top: 20px;
+  
+}
+
+.item-B
+{
+  font-size:28px ;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  display: flex;
+  width: 800px;
+  flex-direction: row-reverse;
+  margin-left: 1000px;
+  flex: 1;
+ 
+  
+}
+.item-B:hover
+{
+ 
+  transform: scale(1.1);
+  transition: 0.3s all;
+
+}
+
+
+.Boisson
+{
+  background: url(../Images/images/images/boisson-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 480px) and (max-width: 780px)
+{
+  body{float:left;}
+}
+
+
+
+
